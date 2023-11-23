@@ -34,6 +34,7 @@ body{
   justify-content: space-around;
   gap:1.8rem;
   flex-basis: 1;
+  position: fixed ;
 }
 
 .btn{
@@ -58,6 +59,11 @@ body{
   display: flex;
   justify-content: space-between;
   margin-bottom: .4rem;
+  
+}
+
+.right-side{
+  position: relative;
 }
 
 .right-side p{
@@ -83,4 +89,25 @@ body{
 .close-btn:hover{
   background-color: transparent;
   color: #444;
+}
+
+.first-btn-detail{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top : 0;
+  z-index: 3;
+  width: 100%;
+}
+.second-btn-detail{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top : 0;
+  z-index: 2;
+}
+.third-btn-detail{
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
 }
